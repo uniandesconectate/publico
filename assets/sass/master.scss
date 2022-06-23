@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "node_modules/bulma/bulma.sass";
+
+// Update Bulma's global variables
+$family-sans-serif: "Noto Sans",
+sans-serif;
+$blue: #4b82af;
+$light-blue: #b7cddf;
+$white: #ffffff;
+
+body {
+    font-family: $family-sans-serif;
+    color: $blue;
+}
+
+.hero {
+
+    .hero-body {
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            color: $blue;
+            margin-bottom: 0px;
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+
+        img {
+            width: calc(50% - 100px);
+
+            @include mobile {
+                width: 90vw;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
