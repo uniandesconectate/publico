@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>¿Qué y cómo compras?</title>
+
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+
+<body>
+	<section id="printable" class="container">
+		<header class="hero">
+			<div class="hero-body is-flex is-justify-content-space-between is-align-items-center pl-0 pr-0">
+				<h1 class="title">
+					¿Qué y cómo compras?
+				</h1>
+				<img src="assets/img/logo.png" alt="Logo">
+			</div>
+		</header>
+		<div class="columns mb-5">
+			<div class="column block table-container">
+				<table class="table is-striped is-hoverable is-fullwidth">
+					<thead>
+						<tr>
+							<th colspan="6"></th>
+							<th colspan="3">OBJETO 1</th>
+							<th colspan="3">OBJETO 2</th>
+							<th colspan="3">OBJETO 3</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="sub-header">
+							<td colspan="6">QUIZ</td>
+
+							<td colspan="">SÍ</td>
+							<td colspan="">NO</td>
+							<td colspan="">NO SÉ</td>
+
+							<td colspan="">SÍ</td>
+							<td colspan="">NO</td>
+							<td colspan="">NO SÉ</td>
+
+							<td colspan="">SÍ</td>
+							<td colspan="">NO</td>
+							<td colspan="">NO SÉ</td>
+						</tr>
+						<tr>
+							<td colspan="6">Lo compré para suplir una necesidad previamente identificada</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l1" data-text="obj1-l1" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l1" data-text="obj1-l1" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l1" data-text="obj1-l1" value="0"></td>
+							<input type="hidden" id="obj1-l1" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l1" data-text="obj2-l1" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l1" data-text="obj2-l1" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l1" data-text="obj2-l1" value="0"></td>
+							<input type="hidden" id="obj2-l1" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l1" data-text="obj3-l1" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l1" data-text="obj3-l1" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l1" data-text="obj3-l1" value="0"></td>
+							<input type="hidden" id="obj3-l1" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">No había planeado comprar algo similar, lo compré porque me gustó</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l2" data-text="obj1-l2" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l2" data-text="obj1-l2" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l2" data-text="obj1-l2" value="0"></td>
+							<input type="hidden" id="obj1-l2" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l2" data-text="obj2-l2" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l2" data-text="obj2-l2" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l2" data-text="obj2-l2" value="0"></td>
+							<input type="hidden" id="obj2-l2" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l2" data-text="obj3-l2" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l2" data-text="obj3-l2" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l2" data-text="obj3-l2" value="0"></td>
+							<input type="hidden" id="obj3-l2" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Lo compré por tendencia “todos tenemos y queremos uno”</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l3" data-text="obj1-l3" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l3" data-text="obj1-l3" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l3" data-text="obj1-l3" value="0"></td>
+							<input type="hidden" id="obj1-l3" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l3" data-text="obj2-l3" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l3" data-text="obj2-l3" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l3" data-text="obj2-l3" value="0"></td>
+							<input type="hidden" id="obj2-l3" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l3" data-text="obj3-l3" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l3" data-text="obj3-l3" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l3" data-text="obj3-l3" value="0"></td>
+							<input type="hidden" id="obj3-l3" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Cuando lo compré, busqué primero opciones de segunda mano</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l4" data-text="obj1-l4" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l4" data-text="obj1-l4" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l4" data-text="obj1-l4" value="0"></td>
+							<input type="hidden" id="obj1-l4" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l4" data-text="obj2-l4" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l4" data-text="obj2-l4" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l4" data-text="obj2-l4" value="0"></td>
+							<input type="hidden" id="obj2-l4" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l4" data-text="obj3-l4" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l4" data-text="obj3-l4" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l4" data-text="obj3-l4" value="0"></td>
+							<input type="hidden" id="obj3-l4" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Es un producto de buena calidad que quiero conservar en uso por muchos años</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l5" data-text="obj1-l5" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l5" data-text="obj1-l5" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l5" data-text="obj1-l5" value="0"></td>
+							<input type="hidden" id="obj1-l5" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l5" data-text="obj2-l5" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l5" data-text="obj2-l5" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l5" data-text="obj2-l5" value="0"></td>
+							<input type="hidden" id="obj2-l5" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l5" data-text="obj3-l5" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l5" data-text="obj3-l5" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l5" data-text="obj3-l5" value="0"></td>
+							<input type="hidden" id="obj3-l5" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Es eco-eficiente: Ahorra en materiales y en recursos cuando se usa/ fabrica</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l6" data-text="obj1-l6" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l6" data-text="obj1-l6" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l6" data-text="obj1-l6" value="0"></td>
+							<input type="hidden" id="obj1-l6" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l6" data-text="obj2-l6" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l6" data-text="obj2-l6" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l6" data-text="obj2-l6" value="0"></td>
+							<input type="hidden" id="obj2-l6" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l6" data-text="obj3-l6" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l6" data-text="obj3-l6" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l6" data-text="obj3-l6" value="0"></td>
+							<input type="hidden" id="obj3-l6" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Vale la pena invertir tiempo en mantenerlo limpio y en buen estado</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l7" data-text="obj1-l7" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l7" data-text="obj1-l7" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l7" data-text="obj1-l7" value="0"></td>
+							<input type="hidden" id="obj1-l7" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l7" data-text="obj2-l7" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l7" data-text="obj2-l7" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l7" data-text="obj2-l7" value="0"></td>
+							<input type="hidden" id="obj2-l7" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l7" data-text="obj3-l7" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l7" data-text="obj3-l7" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l7" data-text="obj3-l7" value="0"></td>
+							<input type="hidden" id="obj3-l7" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Cuesta dinero mantenerlo en funcionamiento</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l8" data-text="obj1-l8" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l8" data-text="obj1-l8" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l8" data-text="obj1-l8" value="0"></td>
+							<input type="hidden" id="obj1-l8" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l8" data-text="obj2-l8" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l8" data-text="obj2-l8" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l8" data-text="obj2-l8" value="0"></td>
+							<input type="hidden" id="obj2-l8" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l8" data-text="obj3-l8" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l8" data-text="obj3-l8" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l8" data-text="obj3-l8" value="0"></td>
+							<input type="hidden" id="obj3-l8" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Tengo un producto similar al que le doy el mismo uso</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l9" data-text="obj1-l9" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l9" data-text="obj1-l9" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l9" data-text="obj1-l9" value="0"></td>
+							<input type="hidden" id="obj1-l9" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l9" data-text="obj2-l9" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l9" data-text="obj2-l9" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l9" data-text="obj2-l9" value="0"></td>
+							<input type="hidden" id="obj2-l9" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l9" data-text="obj3-l9" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l9" data-text="obj3-l9" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l9" data-text="obj3-l9" value="0"></td>
+							<input type="hidden" id="obj3-l9" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">La marca a la cual pertenece, tiene prácticas insostenibles (explotación de materia prima, empaques contaminantes, explotación laboral, etc.)</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l10" data-text="obj1-l10" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l10" data-text="obj1-l10" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l10" data-text="obj1-l10" value="0"></td>
+							<input type="hidden" id="obj1-l10" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l10" data-text="obj2-l10" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l10" data-text="obj2-l10" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l10" data-text="obj2-l10" value="0"></td>
+							<input type="hidden" id="obj2-l10" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l10" data-text="obj3-l10" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l10" data-text="obj3-l10" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l10" data-text="obj3-l10" value="0"></td>
+							<input type="hidden" id="obj3-l10" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Tiene algún componente dañino para mi o mi familia. Ej. Teflón</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l11" data-text="obj1-l11" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l11" data-text="obj1-l11" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l11" data-text="obj1-l11" value="0"></td>
+							<input type="hidden" id="obj1-l11" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l11" data-text="obj2-l11" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l11" data-text="obj2-l11" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l11" data-text="obj2-l11" value="0"></td>
+							<input type="hidden" id="obj2-l11" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l11" data-text="obj3-l11" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l11" data-text="obj3-l11" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l11" data-text="obj3-l11" value="0"></td>
+							<input type="hidden" id="obj3-l11" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">En caso de dañarse, podría repararlo yo mismo o en un lugar especializado</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l12" data-text="obj1-l12" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l12" data-text="obj1-l12" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l12" data-text="obj1-l12" value="0"></td>
+							<input type="hidden" id="obj1-l12" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l12" data-text="obj2-l12" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l12" data-text="obj2-l12" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l12" data-text="obj2-l12" value="0"></td>
+							<input type="hidden" id="obj2-l12" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l12" data-text="obj3-l12" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l12" data-text="obj3-l12" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l12" data-text="obj3-l12" value="0"></td>
+							<input type="hidden" id="obj3-l12" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Cuando no lo quiera conservar más, podría reutilizarse. Ej. Donación, venta en mercado de segunda</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l13" data-text="obj1-l13" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l13" data-text="obj1-l13" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l13" data-text="obj1-l13" value="0"></td>
+							<input type="hidden" id="obj1-l13" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l13" data-text="obj2-l13" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l13" data-text="obj2-l13" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l13" data-text="obj2-l13" value="0"></td>
+							<input type="hidden" id="obj2-l13" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l13" data-text="obj3-l13" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l13" data-text="obj3-l13" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l13" data-text="obj3-l13" value="0"></td>
+							<input type="hidden" id="obj3-l13" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Se le podría dar un propósito diferente al original</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l14" data-text="obj1-l14" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l14" data-text="obj1-l14" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l14" data-text="obj1-l14" value="0"></td>
+							<input type="hidden" id="obj1-l14" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l14" data-text="obj2-l14" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l14" data-text="obj2-l14" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l14" data-text="obj2-l14" value="0"></td>
+							<input type="hidden" id="obj2-l14" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l14" data-text="obj3-l14" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l14" data-text="obj3-l14" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l14" data-text="obj3-l14" value="0"></td>
+							<input type="hidden" id="obj3-l14" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6">Sus materiales son de origen natural, son reciclables o compostables
+							</td>
+
+							<td colspan=""><input type="radio" name="obj-1-l15" data-text="obj1-l15" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l15" data-text="obj1-l15" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-1-l15" data-text="obj1-l15" value="0"></td>
+							<input type="hidden" id="obj1-l15" data-result="obj1" value="">
+
+							<td colspan=""><input type="radio" name="obj-2-l15" data-text="obj2-l15" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l15" data-text="obj2-l15" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-2-l15" data-text="obj2-l15" value="0"></td>
+							<input type="hidden" id="obj2-l15" data-result="obj2" value="">
+
+							<td colspan=""><input type="radio" name="obj-3-l15" data-text="obj3-l15" value="1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l15" data-text="obj3-l15" value="-1"></td>
+							<td colspan=""><input type="radio" name="obj-3-l15" data-text="obj3-l15" value="0"></td>
+							<input type="hidden" id="obj3-l15" data-result="obj3" value="">
+						</tr>
+						<tr>
+							<td colspan="6"><strong>Resultado</strong></td>
+							<td colspan="3">
+								<input id="resultObj1" class="input is-info" type="text" placeholder="Resultado objeto 1" readonly>
+							</td>
+							<td colspan="3">
+								<input id="resultObj2" class="input is-info" type="text" placeholder="Resultado objeto 2" readonly>
+							</td>
+							<td colspan="3">
+								<input id="resultObj3" class="input is-info" type="text" placeholder="Resultado objeto 3" readonly>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section id="buttons" class="container">
+		<div class="columns my-5">
+			<div class="column is-three-quarters"></div>
+			<div class="column">
+				<button id="download" class="button is-info is-outlined is-fullwidth">Descargar</button>
+			</div>
+			<div class="column">
+				<button id="clean" class="button is-info is-outlined is-fullwidth">Limpiar</button>
+			</div>
+		</div>
+	</section>
+
+	<script src="assets/thirdpart/Html2Pdf/dist/html2pdf.bundle.min.js"></script>
+	<script src="assets/js/master.js"></script>
+
+</body>
+
+</html>
