@@ -4,12 +4,16 @@
 
 // Update Bulma's global variables
 $family-sans-serif: "Noto Sans",
-sans-serif;
+    sans-serif;
 $blue: #4b82af;
 $light-blue: #b7cddf;
 $white: #ffffff;
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: $family-sans-serif;
     color: $blue;
 }

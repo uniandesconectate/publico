@@ -3,10 +3,7 @@
     const btn_clean = document.querySelector( '#clean' );
     const btn_download = document.querySelector( '#download' );
     const options = document.querySelectorAll( '[type=radio]' );
-    const inputResult = document.querySelector( '#result' );
-    const primiparo = document.querySelector( '#primiparo' );
-    const entusiasta = document.querySelector( '#entusiasta' );
-    const avanzado = document.querySelector( '#avanzado' );
+    const pointer = document.querySelector( '.pointer' );
 
     btn_download.addEventListener( 'click', function ()
     {
@@ -15,13 +12,16 @@
         html2pdf()
             .set( {
                 filename: 'results.pdf',
-                margin: 2,
+                margin: 4,
+                image: {
+                    type: 'png',
+                    quality: 0.9
+                },
                 html2canvas: {
                     scale: 1,
                     width: elementHTML.clientWidth,
                     height: elementHTML.clientHeight * 2,
-                    x: 100,
-                    y: 1000
+                    y: 600
                 },
                 jsPDF: {
                     orientation: 'p',
@@ -52,10 +52,7 @@
             element.value = '';
         } );
 
-        document.querySelectorAll( '.result' ).forEach( element =>
-        {
-            element.classList.add( 'is-hidden' );
-        } );
+        calcular();
     } );
 
     options.forEach( element =>
@@ -75,34 +72,16 @@
         let totalObj1 = 0;
         document.querySelectorAll( '[Type=hidden]' ).forEach( element =>
         {
-            let resultObj = element.dataset.result;
-
-            if ( resultObj == 'obj1' )
+            totalObj1 = totalObj1 + Number( element.value );
+            if ( totalObj1 > 13 )
             {
-                totalObj1 = totalObj1 + Number( element.value );
-                inputResult.value = totalObj1;
-
-                if ( totalObj1 < 46 )
-                {
-                    hideElements();
-                    primiparo.classList.remove( 'is-hidden' );
-                } else if ( totalObj1 > 45 && totalObj1 < 75 )
-                {
-                    hideElements();
-                    entusiasta.classList.remove( 'is-hidden' );
-                } else if ( totalObj1 > 74 )
-                {
-                    hideElements();
-                    avanzado.classList.remove( 'is-hidden' );
-                }
+                let position = ( ( totalObj1 - 13 ) * 100 ) / 52;
+                pointer.style.setProperty( '--pointer-x', position + "%" );
+            } else
+            {
+                let position = ( ( 0 ) * 100 ) / 52;
+                pointer.style.setProperty( '--pointer-x', position + "%" );
             }
         } );
-    }
-
-    function hideElements ()
-    {
-        primiparo.classList.add( 'is-hidden' );
-        entusiasta.classList.add( 'is-hidden' );
-        avanzado.classList.add( 'is-hidden' );
     }
 } )();
