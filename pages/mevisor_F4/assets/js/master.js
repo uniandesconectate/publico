@@ -73,13 +73,13 @@
         document.querySelectorAll( '[Type=hidden]' ).forEach( element =>
         {
             totalObj1 = totalObj1 + Number( element.value );
-            if ( totalObj1 > 13 )
+            if ( totalObj1 > 15 )
             {
-                let position = ( ( totalObj1 - 13 ) * 100 ) / 52;
+                let position = ( ( totalObj1 - 15 ) * 100 ) / 60;
                 pointer.style.setProperty( '--pointer-x', position + "%" );
             } else
             {
-                let position = ( ( 0 ) * 100 ) / 52;
+                let position = ( ( 0 ) * 100 ) / 60;
                 pointer.style.setProperty( '--pointer-x', position + "%" );
             }
         } );
