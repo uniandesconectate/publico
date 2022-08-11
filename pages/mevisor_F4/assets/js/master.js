@@ -68,19 +68,19 @@
                 totalObj1 = totalObj1 + Number( element.value );
                 if ( totalObj1 > 8 ) {
                     let position = ( ( totalObj1 - 8 ) * 100 ) / 32;
-                    pointer1.style.setProperty( '--pointer-x', position + "%" );
+                    pointer2.style.setProperty( '--pointer-x', position + "%" );
                 } else {
                     let position = ( ( 0 ) * 100 ) / 32;
-                    pointer1.style.setProperty( '--pointer-x', position + "%" );
+                    pointer2.style.setProperty( '--pointer-x', position + "%" );
                 }
             } else if ( element.dataset.result === "obj2" ) {
                 totalObj2 = totalObj2 + Number( element.value );
                 if ( totalObj2 > 7 ) {
                     let position = ( ( totalObj2 - 7 ) * 100 ) / 28;
-                    pointer2.style.setProperty( '--pointer-x', position + "%" );
+                    pointer1.style.setProperty( '--pointer-x', position + "%" );
                 } else {
                     let position = ( ( 0 ) * 100 ) / 60;
-                    pointer2.style.setProperty( '--pointer-x', position + "%" );
+                    pointer1.style.setProperty( '--pointer-x', position + "%" );
                 }
             }
         } );
