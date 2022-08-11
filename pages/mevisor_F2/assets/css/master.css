@@ -7949,7 +7949,8 @@ body {
 .pointer {
   width: 40px;
   position: absolute;
-  margin-top: 3px;
+  margin-top: 26px;
+  margin-left: 1rem;
   left: calc(var(--pointer-x) - 20px); }
 
 .button.is-primary.is-outlined {
